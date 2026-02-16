@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио программиста</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Шапка -->
+    <header id="home" class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <h1>Иван Иванов</h1>
+                <p class="text-sm font-light text-gray-600">Веб-разработчик</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 text-gray-700">
+                    <li><a href="#about" class="hover:text-blue-600">Обо мне</a></li>
+                    <li><a href="#skills" class="hover:text-blue-600">Навыки</a></li>
+                    <li><a href="#projects" class="hover:text-blue-600">Проекты</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10">
+
+        <!-- Обо мне -->
+        <section id="about" class="mb-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold mb-4 border-b pb-2">Обо мне</h2>
+            <p class="mb-2">
+                Привет! Я увлеченный веб-разработчик с опытом создания современных и отзывчивых веб-приложений. Люблю решать сложные задачи и изучать новые технологии.
+            </p>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="mb-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold mb-4 border-b pb-2">Навыки</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">HTML5</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">CSS3</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">JavaScript (ES6+)</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">React</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Node.js</span>
+                <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Python</span>
+                <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Django</span>
+                <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">SQL</span>
+                <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">Git</span>
+            </div>
+        </section>
+
+        <!-- Работы / Projects -->
+        <section id="projects" class="mb-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold mb-4 border-b pb-2">Проекты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Проект 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Проект "Социальная сеть"</h3>
+                        <p class="text-gray-700 text-base mb-2">
+                            Платформа для общения с друзьями, публикации фотографий и новостей.
+                        </p>
+                        <p class="mb-4"><strong class="font-semibold">Технологии:</strong> React, Node.js, PostgreSQL</p>
+                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
+                        <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">GitHub</a>
+                        <div class="project-details hidden mt-4 text-sm text-gray-600">
+                            <p><strong>Подробное описание:</strong> Этот проект включал в себя разработку фронтенда на React для создания динамического пользовательского интерфейса и бэкенда на Node.js с использованием Express для обработки API-запросов. База данных PostgreSQL была выбрана для хранения данных пользователей, постов и связей между ними. Реализована система аутентификации, лента новостей в реальном времени и обмен личными сообщениями.</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Проект 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Проект "E-commerce магазин"</h3>
+                        <p class="text-gray-700 text-base mb-2">
+                            Интернет-магазин с каталогом товаров, корзиной и системой оплаты.
+                        </p>
+                        <p class="mb-4"><strong class="font-semibold">Технологии:</strong> Django, Python, JavaScript, Stripe API</p>
+                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
+                        <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">GitHub</a>
+                        <div class="project-details hidden mt-4 text-sm text-gray-600">
+                           <p><strong>Подробное описание:</strong> Разработка полнофункционального интернет-магазина на Django. Бэкенд обрабатывает каталог товаров, управление заказами и аутентификацию пользователей. Фронтенд, созданный с использованием шаблонов Django и JavaScript, включает в себя корзину покупок, поиск по товарам и интеграцию с платежной системой Stripe для безопасной обработки платежей.</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Проект 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Проект "Блог-платформа"</h3>
+                        <p class="text-gray-700 text-base mb-2">
+                            Создание и ведение личного блога с возможностью комментирования.
+                        </p>
+                        <p class="mb-4"><strong class="font-semibold">Технологии:</strong> HTML, CSS, JavaScript</p>
+                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
+                        <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">GitHub</a>
+                        <div class="project-details hidden mt-4 text-sm text-gray-600">
+                             <p><strong>Подробное описание:</strong> Простая, но элегантная блог-платформа, созданная с использованием основ веб-разработки: HTML, CSS и JavaScript. Проект демонстрирует семантическую верстку, адаптивный дизайн с помощью Flexbox и Grid, а также интерактивность на стороне клиента для создания и комментирования постов без перезагрузки страницы (с использованием fetch API для имитации запросов к серверу).</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Проект 4 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Проект "Дашборд аналитики"</h3>
+                        <p class="text-gray-700 text-base mb-2">
+                            Визуализация данных с помощью интерактивных графиков и диаграмм.
+                        </p>
+                        <p class="mb-4"><strong class="font-semibold">Технологии:</strong> React, D3.js, CSS Grid</p>
+                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
+                        <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">GitHub</a>
+                         <div class="project-details hidden mt-4 text-sm text-gray-600">
+                           <p><strong>Подробное описание:</strong> Интерактивный дашборд для визуализации данных, построенный на React. Для создания динамических и анимированных графиков (линейных, круговых диаграмм) использовалась библиотека D3.js. CSS Grid и Flexbox применялись для создания сложной, но гибкой и адаптивной сетки дашборда. Данные для дашборда загружаются из JSON-файла.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="scroll-mt-20">
+            <h2 class="text-3xl font-bold mb-4 border-b pb-2">Контакты</h2>
+            <p class="mb-2">
+                Вы можете связаться со мной по электронной почте или найти меня в социальных сетях.
+            </p>
+            <ul class="flex flex-col space-y-2">
+                <li><strong>Email:</strong> <a href="mailto:email@example.com" class="text-blue-600 hover:underline">email@example.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">github.com/example</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/example" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">linkedin.com/in/example</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-white mt-16 py-4">
+        <div class="container mx-auto text-center text-gray-600">
+            <p>&copy; 2024 Иван Иванов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const detailButtons = document.querySelectorAll('.details-btn');
+            detailButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const details = this.nextElementSibling;
+                    const isHidden = details.classList.contains('hidden');
+                    
+                    // Сначала скроем все открытые детали
+                    document.querySelectorAll('.project-details').forEach(detail => {
+                        detail.classList.add('hidden');
+                    });
+
+                    // Если текущий блок был скрыт, показываем его
+                    if (isHidden) {
+                        details.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
