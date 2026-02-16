@@ -60,7 +60,6 @@
                             Этот проект очень крутой. Он про то и это.
                         </p>
                         <p class="mb-4"><strong class="font-semibold">Технологии:</strong> React, Node.js, PostgreSQL</p>
-                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
                         <a href="https://github.com/platonpotemkin51-source" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">Перейти в GitHub</a>
                     </div>
                 </article>
@@ -72,7 +71,6 @@
                             Этот проект очень крутой. Он про то и это.
                         </p>
                         <p class="mb-4"><strong class="font-semibold">Технологии:</strong> React, Node.js, PostgreSQL</p>
-                        <button class="details-btn inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">Подробнее</button>
                         <a href="https://github.com/platonpotemkin51-source" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-colors ml-2">Перейти в GitHub</a>
                     </div>
                 </article>
@@ -96,28 +94,6 @@
             <p>&copy; 2025 - 2026  Потёмкин Платон.</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const detailButtons = document.querySelectorAll('.details-btn');
-            detailButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const details = this.nextElementSibling;
-                    const isHidden = details.classList.contains('hidden');
-                    
-                    // Сначала скроем все открытые детали
-                    document.querySelectorAll('.project-details').forEach(detail => {
-                        detail.classList.add('hidden');
-                    });
-
-                    // Если текущий блок был скрыт, показываем его
-                    if (isHidden) {
-                        details.classList.remove('hidden');
-                    }
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>
